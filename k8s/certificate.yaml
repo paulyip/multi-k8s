@@ -1,4 +1,4 @@
-apiVersion: certmanager.k8s.io/v1alpha1
+apiVersion: certmanager.k8s.io/v1alpha2
 kind: Certificate
 metadata:
     name: k8s-multi-com-tls
@@ -7,7 +7,7 @@ spec:
     issuerRef:
         name: letsencrypt-prod
         kind: ClusterIssuer
-    commonName: k8s.redkoda.com
+    commonName: redkoda.com
     dnsNames:
         - k8s.redkoda.com
     acme:
